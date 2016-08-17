@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 
-export default class TodoFilter extends Component{
+export default class TodoFilter_X extends Component{
     constructor(props){
         super(props);
-        this.changeStatus = this.changeStatus.bind(this);
+        this.setFilter = this.setFilter.bind(this);
     }
-    changeStatus(event){
-        this.props.onChangeStatus(event.target.value);
+    setFilter(event){
+        this.props.onSetFilter(event.target.value);
     }
     render() {
         return (
             <div>
                 <label>状态：</label>
-                <select onChange={this.changeStatus}>
+                <select onChange={this.setFilter}>
                     <option value='All'>全部</option>
                     <option value='NotCompleted'>未完成</option>
                     <option value='Completed'>已完成</option>

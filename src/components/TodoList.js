@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import TodoItem from '../components/TodoItem';
 
-export default class TodoList extends Component{
+export default class TodoList_X extends Component{
     render() {
         let items = [];
         for(let i in this.props.items){
