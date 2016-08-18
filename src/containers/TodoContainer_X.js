@@ -7,7 +7,7 @@ import { addTodo, complete, setFilter } from '../actions';
 
 class TodoContainer_X extends Component{
     render() {
-        const { items, filter, onAddTodo, onComplete, onSetFilter } = this.props;
+        const { items, filter='All', onAddTodo, onComplete, onSetFilter } = this.props;
         let filteredItems = {};
         if(filter === 'All'){
             filteredItems = items;
